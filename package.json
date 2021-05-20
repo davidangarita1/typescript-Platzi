@@ -1,0 +1,23 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "Curso de typescript Platzi",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "npm",
+    "javascript",
+    "typescript"
+  ],
+  "author": "David Angarita <david@dangwebs.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@editorjs/editorjs": "^2.21.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

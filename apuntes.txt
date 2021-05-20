@@ -1,0 +1,30 @@
+// Compilar typescript
+$ tsc index.tsc
+
+// Compilar todo automaticamente en modo watcher
+$ tsc -w
+
+// Compilar modo watcher
+$ tsc -w index.tsc
+
+// Crear archivo tsconfig.json
+$ tsc --init
+
+// Incluir archivos en la compilación en tsconfig.json
+    "include: [
+     "src/**/*.ts"
+    ],
+
+// Exluir archivos en la compilación tsconfig.json
+    "exclude": [
+        "node_modules",
+        "**/*test.ts"
+    ]
+
+// Definir ruta de compilacion en tsconfig.json
+    "outDir": "./dist", 
+
+// Tipo de datos primitivos
+    Number > Boolean > String > Array
+    Tuple > Enum > Any > Void
+    Null > Undefined > Never >Object
