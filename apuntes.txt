@@ -28,3 +28,9 @@ $ tsc --init
     Number > Boolean > String > Array
     Tuple > Enum > Any > Void
     Null > Undefined > Never >Object
+
+// Compilar con strictNullChecks
+$ tsc src/index.ts --strictNullChecks
+
+// Habilitar strictNullChecks en tsconfig.json
+    "strictNullChecks": true, 

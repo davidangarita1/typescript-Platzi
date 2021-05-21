@@ -23,4 +23,26 @@ isPro = true;
 // isPro = 1; // Error
 
 // Inferido
-let isUserPro: false;
+let isUserPro = false;
+isUserPro = true;
+// isUserPro = 10; Error!
+
+// String
+let userName: string = 'David';
+userName = "Alba Rudas";
+// userName = true; // Error!
+
+// Tempalte String
+// Uso de back-tick `
+let userInfo: string;
+userInfo = `
+    User Info:
+    username: ${userName}
+    firtName: ${userName + ' Angarita'}
+    phone: ${phone}
+    isPro: ${isPro}
+    --------------------------------------
+`;
+
+console.log('userInfo', userInfo);
+
