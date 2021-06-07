@@ -37,14 +37,14 @@ console.log('picture', picture);
 
 // TIpo de retorno con TypeScript
 
-function  handleError(code: number, message: string): never | string {
+/* function handleError(code: number, message: string): never | string {
     // Procesamiento del codigo, mensaje
     if(message === 'error') {
-        throw new Error(`${message}. Code error: ${code}`):
+        throw new Error(`${message}. Code error: ${code}`);
     } else {
         return 'An error has occurred';
     }
-}
+}*/
 
 try {
     let result = handleError(200, 'OK');

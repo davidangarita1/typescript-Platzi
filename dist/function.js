@@ -28,15 +28,14 @@ var createPic = function (title, date, size) {
 var picture = createPic('Platzi session', '2020-03-10', '100x100');
 console.log('picture', picture);
 // TIpo de retorno con TypeScript
-function handleError(code, message) {
+/* function handleError(code: number, message: string): never | string {
     // Procesamiento del codigo, mensaje
-    if (message === 'error') {
-        throw new Error(message + ". Code error: " + code);
-    }
-    else {
+    if(message === 'error') {
+        throw new Error(`${message}. Code error: ${code}`);
+    } else {
         return 'An error has occurred';
     }
-}
+}*/
 try {
     var result = handleError(200, 'OK');
     console.log('result', result);
