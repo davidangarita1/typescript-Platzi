@@ -4,7 +4,7 @@ Una tupla en TypeScript es un array de elementos que están tipados. De esta man
 */
 Object.defineProperty(exports, "__esModule", { value: true });
 // [1, 'user']
-var user;
+let user;
 user = [1, 'luixaviles'];
 console.log('user', user);
 console.log('username', user[1]);
@@ -12,11 +12,11 @@ console.log('username.length', user[1].length);
 console.log('id', user[0]);
 // Tuplas con varios valores
 // id, username, isPro
-var userInfo;
+let userInfo;
 userInfo = [2, 'paparazzi', true];
 console.log('userInfor', userInfo);
 // Arreglo de Tuplas
-var array = [];
+let array = [];
 array.push([1, 'luixaviles']); // 0
 array.push([2, 'paparazzi']); // 1
 array.push([1, 'lensQueen']); // 2

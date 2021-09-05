@@ -1,15 +1,15 @@
 "use strict";
 // TIpo explicito
-var idUser;
+let idUser;
 idUser = 1; // number
 idUser = '1'; // string
 console.log('idUser', idUser);
 // Tipo Inferido
-var otherId;
+let otherId;
 otherId = 1;
 otherId = '1';
 console.log('otherId', otherId);
-var surprise = 'hello typescript';
+let surprise = 'hello typescript';
 // surprise.sayHello(); // Error
-var res = surprise.substring(6); // Error
+const res = surprise.substring(6); // Error
 console.log('res', res);

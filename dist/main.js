@@ -2,32 +2,39 @@
 console.log('Hola soy main');
 // NUmber
 // Explicito
-var phone;
+let phone;
 phone = 1;
 phone = 34534534;
 // phone = 'home'; // Error
 // Inferido
-var phoneNumber = 34534534;
+let phoneNumber = 34534534;
 phoneNumber = 123;
 // phoneNumber = true; // Error por tipo
-var hex = 0xf00d; // Hexadecimal
-var binary = 10; // Binario
-var octal = 484; // Octal
+let hex = 0xf00d; // Hexadecimal
+let binary = 0b1010; // Binario
+let octal = 0o744; // Octal
 // Tipo: Boolean
 // TIpado Explicito
-var isPro;
+let isPro;
 isPro = true;
 // isPro = 1; // Error
 // Inferido
-var isUserPro = false;
+let isUserPro = false;
 isUserPro = true;
 // isUserPro = 10; Error!
 // String
-var userName = 'David';
+let userName = 'David';
 userName = "Alba Rudas";
 // userName = true; // Error!
 // Tempalte String
 // Uso de back-tick `
-var userInfo;
-userInfo = "\n    User Info:\n    username: " + userName + "\n    firtName: " + (userName + ' Angarita') + "\n    phone: " + phone + "\n    isPro: " + isPro + "\n    --------------------------------------\n";
+let userInfo;
+userInfo = `
+    User Info:
+    username: ${userName}
+    firtName: ${userName + ' Angarita'}
+    phone: ${phone}
+    isPro: ${isPro}
+    --------------------------------------
+`;
 console.log('userInfo', userInfo);

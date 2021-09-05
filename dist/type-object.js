@@ -1,6 +1,6 @@
 "use strict";
 // Type: object
-var user;
+let user;
 user = {}; // Object
 user = {
     id: 1,
@@ -10,12 +10,12 @@ user = {
 };
 console.log('user', user);
 // Object vs object(Clase JS vs topo TS)
-var myObj = {
+const myObj = {
     id: 1,
     username: 'paparazzi',
     firstName: 'Pablo',
     isPro: true
 };
-var isInstance = myObj instanceof Object; // clase Object Javascript
+const isInstance = myObj instanceof Object; // clase Object Javascript
 console.log('isIntance', isInstance);
 console.log('user.username', myObj.username);

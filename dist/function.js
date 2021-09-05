@@ -17,15 +17,15 @@ function createPicture2(title, date, size) {
 createPicture2('My Birthday', '2020-03-10', '500x500');
 createPicture2('Colombia Trip', '2020-03');
 // Flat Array Function
-var createPic = function (title, date, size) {
+let createPic = (title, date, size) => {
     /* return {
         title: title,
         date: date,
         size: size
     }; */
-    return { title: title, date: date, size: size };
+    return { title, date, size };
 };
-var picture = createPic('Platzi session', '2020-03-10', '100x100');
+const picture = createPic('Platzi session', '2020-03-10', '100x100');
 console.log('picture', picture);
 // TIpo de retorno con TypeScript
 /* function handleError(code: number, message: string): never | string {
@@ -37,7 +37,7 @@ console.log('picture', picture);
     }
 }*/
 try {
-    var result = handleError(200, 'OK');
+    let result = handleError(200, 'OK');
     console.log('result', result);
     result = handleError(404, 'error');
     console.log('result', result);

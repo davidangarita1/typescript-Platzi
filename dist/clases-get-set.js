@@ -7,11 +7,36 @@ var PhotoOrientation;
     PhotoOrientation[PhotoOrientation["Square"] = 2] = "Square";
     PhotoOrientation[PhotoOrientation["Panorama"] = 3] = "Panorama";
 })(PhotoOrientation || (PhotoOrientation = {}));
+// get y set
 class Picture {
     constructor(id, title, orientation) {
-        this.id = id;
-        this.title = title;
-        this.orientation = orientation;
+        this._id = id;
+        this._title = title;
+        this._orientation = orientation;
+    }
+    ;
+    get id() {
+        return this._id;
+    }
+    ;
+    set id(id) {
+        this._id = id;
+    }
+    ;
+    get title() {
+        return this._title;
+    }
+    ;
+    set title(title) {
+        this._title = title;
+    }
+    ;
+    get orientation() {
+        return this._orientation;
+    }
+    ;
+    set orientation(orientation) {
+        this._orientation = orientation;
     }
     ;
     // Comportamiento
@@ -23,9 +48,25 @@ class Picture {
 ;
 class Album {
     constructor(id, title) {
-        this.id = id;
-        this.title = title;
+        this._id = id;
+        this._title = title;
         this.pictures = [];
+    }
+    ;
+    get id() {
+        return this._id;
+    }
+    ;
+    set id(id) {
+        this._id = id;
+    }
+    ;
+    get title() {
+        return this._title;
+    }
+    ;
+    set title(title) {
+        this._title = title;
     }
     ;
     addPicture(picture) {
@@ -38,7 +79,8 @@ const picture = new Picture(1, 'Platzi session', PhotoOrientation.Square);
 album.addPicture(picture);
 console.log('album', album);
 // Accediendo a los mienbros publicos
-picture.id = 100; // public
-picture.title = 'Another title'; // public
-album.title = 'Personal Activities'; // public
+console.log('picture.id', picture.id);
+picture.id = 100; // private
+picture.title = 'Another title'; // private
+album.title = 'Personal Activities'; // private
 console.log('album', album);

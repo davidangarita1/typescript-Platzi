@@ -1,14 +1,14 @@
 "use strict";
 // Corchetes []
 // TIpo Explicito
-var users;
+let users;
 users = ['luixaviles', 'paparazzi', 'lensqueen'];
 // users = [1, true, 'test']; // Error
 // TIpo Inferido
-var otherUsers = ['luixaviles', 'paparazzi', 'lensqueen'];
+let otherUsers = ['luixaviles', 'paparazzi', 'lensqueen'];
 // otherUsers [1, true, 'test']; // Error
 // Array<TIPO>
-var pictureTitles;
+let pictureTitles;
 pictureTitles = ['Favorite Sunset', 'Vacation TIme', 'Landscape'];
 // Accediendo a lso valores en un Array
 console.log('first user', users[0]);

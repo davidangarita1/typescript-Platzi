@@ -38,7 +38,7 @@ const picture = new Picture(1, 'Platzi session', PhotoOrientation.Square);
 album.addPicture(picture);
 console.log('album', album);
 // Accediendo a los mienbros publicos
-picture.id = 100; // public
-picture.title = 'Another title'; // public
-album.title = 'Personal Activities'; // public
+// picture.id = 100; // private
+// picture.title = 'Another title'; // private
+// album.title = 'Personal Activities'; // private
 console.log('album', album);
