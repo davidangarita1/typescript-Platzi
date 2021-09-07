@@ -34,3 +34,9 @@ $ tsc src/index.ts --strictNullChecks
 
 // Habilitar strictNullChecks en tsconfig.json
     "strictNullChecks": true, 
+
+// Instalar WebPack
+$   npm install typescript webpack webpack-cli --save-dev
+
+// Instalar Loader
+$   npm install ts-loader --save-dev
